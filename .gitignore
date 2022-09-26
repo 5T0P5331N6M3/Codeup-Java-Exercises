@@ -6,3 +6,8 @@
 .DS_Strore
 
 # IntelliJ
+.idea/*
+*.iml
+
+# Compiled output
+*.classout/*
