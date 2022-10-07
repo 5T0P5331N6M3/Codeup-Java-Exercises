@@ -1,8 +1,27 @@
+import java.util.Scanner;
+
 public class ConsoleExercises {
     public static void main(String[] args) {
         double pi = 3.14159;
-        System.out.printf("The value of pi is approximately %.2f, %n.", pi);
+        System.out.printf("The value of pi is approximately %.2f.%n", pi);
+
+//        System.out.println();
+        Scanner scanner = new Scanner(System.in);
+//        System.out.print("Please enter an integer: ");
+//        int num = scanner.nextInt();
+//
+//        System.out.println("Enter three words: ");
+//        String string1 = scanner.next();
+//        String string2 = scanner.next();
+//        String string3 = scanner.next();
+//        System.out.printf("%s%n%s%n%s%n", string1, string2, string3);
+
+        System.out.println("Write a sentence: ");
+        String userInput = scanner.nextLine();
+        System.out.println(userInput);
+
     }
+
 }
 /* Exercises
 * 1. Copy this code into your main method:
