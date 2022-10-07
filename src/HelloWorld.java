@@ -27,7 +27,9 @@ public class HelloWorld {
         int y = 2;
         x = x / y;
         y = y - x;
-        System.out.println(x);
+        double pi = 3.14159;
+        int almostPi = (int) pi;
+        System.out.println(almostPi);
     }
 }
 
