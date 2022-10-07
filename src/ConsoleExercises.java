@@ -1,12 +1,11 @@
 public class ConsoleExercises {
-    public static void main () {
+    public static void main(String[] args) {
         double pi = 3.14159;
-        System.out.format(String.valueOf(pi));
+        System.out.printf("The value of pi is approximately %.2f, %n.", pi);
     }
 }
 /* Exercises
 * 1. Copy this code into your main method:
-
 Copied to clipboard
 double pi = 3.14159;
 Write some Java code that uses the variable pi to output the following:
