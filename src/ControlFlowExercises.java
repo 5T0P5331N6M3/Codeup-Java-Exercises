@@ -23,7 +23,10 @@ public class ControlFlowExercises {
 //               i *= i;
 //           } while(i < 1000000);
         // For Loop
-        for(int i = 5; i <= 15; i ++) {
+//        for(int i = 5; i <= 15; i ++) {
+//            System.out.println(i);
+//        }
+        for(int i = 0; i <= 100; i += 2) {
             System.out.println(i);
         }
     }
