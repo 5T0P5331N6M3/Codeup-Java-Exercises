@@ -1,10 +1,19 @@
 public class ControlFlowExercises {
     public static void main(String[] args) {
-
+        // While Loop
+        int i = 5;
+        while(i <= 15) {
+            System.out.println(i);
+            i++;
+        }
+        // Do While Loop
+        // For Loop
     }
 }
 
-/* 1. Loop Basics
+/* For all of the following exercises, create a new class named ControlFlowExercises with a main method. After each exercise, commit your changes, then replace your code in the main method with the next exercise.
+
+   1. Loop Basics
 *   a. While
 *       Create an integer variable i with a value of 5.
 *       Create a while loop that runs so long as i is less than or equal to 15
