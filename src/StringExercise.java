@@ -4,6 +4,11 @@ public class StringExercise {
         String pinkFloydChorus = "We don't need no thought control\n";
         System.out.println(pinkFloyd + "\n" + pinkFloydChorus);
 
+        String insideS = "Check \"this\" out!, \"s inside of \"s!";
+        System.out.println(insideS);
+
+        String windowsMainDrive =
+
     }
 }
 
