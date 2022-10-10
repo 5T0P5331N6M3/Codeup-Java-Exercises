@@ -1,9 +1,36 @@
+import java.util.Scanner;
+
 public class Bob {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
+        System.out.print("Hey, what's up? ");
+        String userInput = scanner.next();
+
+        System.out.print(userInput);
+
+        String bobQuestion = "Sure.";
+        String bobExclamation = "Whoa, chill out!";
+        String bobEmpty = "Fine. Be that way!";
+        String bobElse = "Whatever.";
+        if (userInput.equals("?")) {
+            System.out.print(bobQuestion);
+        } else if (userInput.equals("!")) {
+            System.out.print(bobExclamation);
+        } else if (userInput.equals("")) {
+            System.out.print(bobEmpty);
+        } else {
+            System.out.print(bobElse);
+        }
+        //This when hovering over "if": 'if' statement can be replaced with 'switch' statement
     }
 }
-
+/*
+* If a question w/ an ?, then "Sure."
+* If yelled at w/ an !, then "Whoa, chill out!"
+* If empty input, then "Fine. Be that way!"
+* Else, "Whatever."
+* */
 
 /* TODO:
 
