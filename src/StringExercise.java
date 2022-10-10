@@ -7,7 +7,8 @@ public class StringExercise {
         String insideS = "Check \"this\" out!, \"s inside of \"s!";
         System.out.println(insideS);
 
-        String windowsMainDrive =
+        String windowsMainDrive = "In windows, the main drive is usually C:\\";
+        System.out.println(windowsMainDrive);
 
     }
 }
