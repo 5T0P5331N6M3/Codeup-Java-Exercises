@@ -5,31 +5,23 @@ public class Bob {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Hey, what's up? ");
-        String userInput = scanner.next();
-
-        System.out.print(userInput);
+        String userInput = scanner.nextLine();
 
         String bobQuestion = "Sure.";
         String bobExclamation = "Whoa, chill out!";
         String bobEmpty = "Fine. Be that way!";
         String bobElse = "Whatever.";
-        switch (userInput) {
-            case "?":
-                System.out.print(bobQuestion);
-                break;
-            case "!":
-                System.out.print(bobExclamation);
-                break;
-            case "":
-                System.out.print(bobEmpty);
-                break;
-            default:
-                System.out.print(bobElse);
-                break;
+
+        if (userInput.endsWith("?")) {
+            System.out.print(bobQuestion);
+        } else if (userInput.endsWith("!")) {
+            System.out.print(bobExclamation);
+        } else if (userInput.isEmpty()) {
+            System.out.print(bobEmpty);
+        } else {
+            System.out.print(bobElse);
         }
-        //This when hovering over "if": 'if' statement can be replaced with 'switch' statement
-        //How do I get this to continue conversation after each question?
-        //Does not recognize special characters; only first char input.
+
     }
 }
 /*
