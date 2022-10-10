@@ -42,8 +42,13 @@ public class ControlFlowExercises {
 //        for(int i = 1; i <= 100; i *= 3) {
 //            System.out.println("Fizz");
 //        }
-        for(int i = 1; i <= 100; i *= 5) {
-            System.out.println("Buzz");
+//        for(int i = 1; i <= 100; i *= 5) {
+//            System.out.println("Buzz");
+//        }
+        for(int Fuzz = 1; Fuzz <= 100; Fuzz *= 3) {
+            for(int Buzz = 5; Buzz <= 100; Buzz *= 5) {
+                System.out.println(Fuzz + Buzz);
+            }
         }
     }
 }
