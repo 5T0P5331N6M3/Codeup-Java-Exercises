@@ -4,12 +4,14 @@ public class StringExercise {
         String pinkFloydChorus = "We don't need no thought control\n";
         System.out.println(pinkFloyd + "\n" + pinkFloydChorus);
 
-        String insideS = "Check \"this\" out!, \"s inside of \"s!";
+        String insideS = "Check \"this\" out!, \"s inside of \"s!\n";
         System.out.println(insideS);
 
-        String windowsMainDrive = "In windows, the main drive is usually C:\\";
+        String windowsMainDrive = "In windows, the main drive is usually C:\\\n";
         System.out.println(windowsMainDrive);
 
+        String backSlashes = "I can do backslashes \\, double backslashes \\\\, and the amazing triple backslash \\\\\\!";
+        System.out.println(backSlashes);
     }
 }
 
