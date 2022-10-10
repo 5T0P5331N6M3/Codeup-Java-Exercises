@@ -13,16 +13,23 @@ public class Bob {
         String bobExclamation = "Whoa, chill out!";
         String bobEmpty = "Fine. Be that way!";
         String bobElse = "Whatever.";
-        if (userInput.equals("?")) {
-            System.out.print(bobQuestion);
-        } else if (userInput.equals("!")) {
-            System.out.print(bobExclamation);
-        } else if (userInput.equals("")) {
-            System.out.print(bobEmpty);
-        } else {
-            System.out.print(bobElse);
+        switch (userInput) {
+            case "?":
+                System.out.print(bobQuestion);
+                break;
+            case "!":
+                System.out.print(bobExclamation);
+                break;
+            case "":
+                System.out.print(bobEmpty);
+                break;
+            default:
+                System.out.print(bobElse);
+                break;
         }
         //This when hovering over "if": 'if' statement can be replaced with 'switch' statement
+        //How do I get this to continue conversation after each question?
+        //Does not recognize special characters; only first char input.
     }
 }
 /*
