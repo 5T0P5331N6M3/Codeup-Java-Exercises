@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class ConsoleExercises {
-    public static <Int> void main(String[] args) {
+    public static void main(String[] args) {
         double pi = 3.14159;
         System.out.printf("The value of pi is approximately %.2f.%n", pi);
 
@@ -16,17 +16,18 @@ public class ConsoleExercises {
 //        String string3 = scanner.next();
 //        System.out.printf("%s%n%s%n%s%n", string1, string2, string3);
 
-//        System.out.println("Write a sentence: ");
-////        String userInput = scanner.next();
-//        String userInput = scanner.nextLine();
-//        System.out.println(userInput);
+        System.out.println("Write a sentence: ");
+//        String userInput = scanner.next();
+        String userInput = scanner.nextLine();
+            // This does not allow user input
+        System.out.println(userInput);
 
-        System.out.println("Enter the length of The Classroom: ");
-        String userLength = scanner.nextLine();
-        System.out.println("Enter the width of The Classroom: ");
-        String userWidth = scanner.nextLine();
-        System.out.println(userLength);
-        System.out.println(userWidth);
+//        System.out.println("Enter the length of The Classroom: ");
+//        String userLength = scanner.nextLine();
+//        System.out.println("Enter the width of The Classroom: ");
+//        String userWidth = scanner.nextLine();
+//        System.out.println(userLength);
+//        System.out.println(userWidth);
     }
 
 }
