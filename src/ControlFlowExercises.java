@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
     public static void main(String[] args) {
         // While Loop
@@ -52,17 +54,27 @@ public class ControlFlowExercises {
 //                }
 //            }
         // Course Instruction did not make it clear how this exercise ought result. I first wrote nested for loops (above) based on course instruction.
-
-        for (int num = 1; num <= 100; num++) {
-            if (num % 15 == 0) {
-                System.out.println("FizzBuzz");
-            } else if (num % 5 == 0) {
-                System.out.println("Buzz");
-            } else if (num % 3 == 0) {
-                System.out.println("Fizz");
-            } else {
-                System.out.println(num);
-            }
+            // FIZZBUZZ the correct way!
+//        for (int num = 1; num <= 100; num++) {
+//            if (num % 15 == 0) {
+//                System.out.println("FizzBuzz");
+//            } else if (num % 5 == 0) {
+//                System.out.println("Buzz");
+//            } else if (num % 3 == 0) {
+//                System.out.println("Fizz");
+//            } else {
+//                System.out.println(num);
+//            }
+//        }
+    Scanner scanner = new Scanner(System.in);
+// Prompt user for an integer
+        System.out.println("What number would you like to go up to?");
+        int userInput = scanner.nextInt();
+        System.out.println(userInput);
+        System.out.println("number | squared | cubed");
+        System.out.println("------ | ------  | ------");
+        for (int i = 1; i <= userInput; i++) {
+            System.out.printf("%d      | %d       | %d     %n", i, i * i, i * i * i);
         }
     }
 }
