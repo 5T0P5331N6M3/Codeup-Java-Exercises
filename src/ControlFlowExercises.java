@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.Scanner;
 
 public class ControlFlowExercises {
@@ -66,17 +68,36 @@ public class ControlFlowExercises {
 //                System.out.println(num);
 //            }
 //        }
-    Scanner scanner = new Scanner(System.in);
-// Prompt user for an integer
-        System.out.println("What number would you like to go up to?");
-        int userInput = scanner.nextInt();
-        System.out.println(userInput);
-        System.out.println("number | squared | cubed");
-        System.out.println("------ | ------  | ------");
-        for (int i = 1; i <= userInput; i++) {
-            System.out.printf("%d      | %d       | %d     %n", i, i * i, i * i * i);
-        }
+        Scanner scanner = new Scanner(System.in);
+//// Prompt user for an integer
+//        System.out.println("What number would you like to go up to?");
+//        int userInput = scanner.nextInt();
+//        System.out.println(userInput);
+//        System.out.println("number | squared | cubed");
+//        System.out.println("------ | ------  | ------");
+//        for (int i = 1; i <= userInput; i++) {
+//            System.out.printf("%d      | %d       | %d     %n", i, i * i, i * i * i);
+//        }
+        String gradeSubmissions = "";
+        do {
+            System.out.println("What is the numerical grade?");
+            int gradeInput = scanner.nextInt();
+            if (gradeInput >= 88) {
+                System.out.println(gradeInput + " is an A.");
+            } else if (gradeInput >= 80 && gradeInput <= 87) {
+                System.out.println(gradeInput + " is an B.");
+            } else if (gradeInput >= 67 && gradeInput <= 79) {
+                System.out.println(gradeInput + " is an C.");
+            } else if (gradeInput >= 60 && gradeInput <= 66) {
+                System.out.println(gradeInput + " is an D.");
+            } else {
+                System.out.println(gradeInput + " is an F.");
+            }
+            System.out.println("Continue entering grades?");
+            gradeSubmissions = scanner.next();
+        } while (gradeSubmissions.equalsIgnoreCase("y") || gradeSubmissions.equalsIgnoreCase("yes"));
     }
+
 }
 
 /* For all of the following exercises, create a new class named ControlFlowExercises with a main method. After each exercise, commit your changes, then replace your code in the main method with the next exercise.
