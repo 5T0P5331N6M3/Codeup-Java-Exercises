@@ -1,20 +1,31 @@
 public class MethodsExercises {
     // Addition
-    public static void addition() {
-        // Maybe use method overloading?
+    public static int addition(int num1, int num2) {
+        return num1 + num2;
     }
     // Subtraction
-    public static void subtraction() {
-
+    public static int subtraction(int num1, int num2) {
+        return num1 - num2;
     }
     // Multiplication
-    public static void multiplication() {
-
+    public static int multiplication(int num1, int num2) {
+        return num1 * num2;
     }
     // Division
-    public static void division() {
-
+    public static int division(int num1, int num2) {
+        return num1 / num2;
     }
+    public static int modulus(int num1, int num2) {
+        return num1 % num2;
+    }
+    public static void main(String[] args) {
+        System.out.println(addition(2, 3));
+        System.out.println(subtraction(4, 7));
+        System.out.println(multiplication(5, 9));
+        System.out.println(division(6, 9));
+        System.out.println(modulus(9, 4));
+    }
+
 }
 
 /*
