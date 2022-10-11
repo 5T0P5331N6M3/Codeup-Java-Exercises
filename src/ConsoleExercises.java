@@ -17,17 +17,22 @@ public class ConsoleExercises {
 //        System.out.printf("%s%n%s%n%s%n", string1, string2, string3);
 
         System.out.println("Write a sentence: ");
-//        String userInput = scanner.next();
         String userInput = scanner.nextLine();
-            // This does not allow user input
         System.out.println(userInput);
 
 //        System.out.println("Enter the length of The Classroom: ");
 //        String userLength = scanner.nextLine();
+//        int length = Integer.parseInt(userLength);
 //        System.out.println("Enter the width of The Classroom: ");
 //        String userWidth = scanner.nextLine();
-//        System.out.println(userLength);
-//        System.out.println(userWidth);
+//        int width = Integer.parseInt(userWidth);
+//        int perimeter = 2 * (length + width);
+////        int perimeter = ((length + length) * (width + width));
+//        int area = (length * width);
+//        System.out.println("Length: " + userLength);
+//        System.out.println("Width: " + userWidth);
+//        System.out.println(perimeter);
+//        System.out.println(area);
     }
 
 }
