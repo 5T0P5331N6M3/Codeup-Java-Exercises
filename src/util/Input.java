@@ -4,13 +4,15 @@ import java.util.Scanner;
 
 public class Input {
 
-    private String scanner;
+//    private String scanner;
     // When an instance of this object is created, the scanner field should be set to a new instance of the Scanner class.
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        String getString
+    public String showScanner() {
+        return scanner;
+        // How do I make this Class'scanner private, and shared with other packages?
     }
-
+    private static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("What is the radius of the circle? ");
+    }
+//    String getString;
 }
