@@ -36,21 +36,34 @@ public class ControlFlowExercises {
 //            System.out.println(i);
 //        }
         // FIZZBUZZ
-//        for(int i = 1; i <= 100; i++) {
+//        for (int i = 1; i <= 100; i++) {
 //            System.out.println(i);
 //        }
-//        for(int i = 1; i <= 100; i *= 3) {
+//        for (int i = 1; i <= 100; i *= 3) {
 //            System.out.println("Fizz");
 //        }
-//        for(int i = 1; i <= 100; i *= 5) {
+//        for (int i = 1; i <= 100; i *= 5) {
 //            System.out.println("Buzz");
 //        }
-        for(int Fuzz = 1; Fuzz <= 100; Fuzz *= 3) {
-            for(int Buzz = 5; Buzz <= 100; Buzz *= 5) {
-                System.out.println(Fuzz + Buzz);
+//
+//        for (int i = 1; i <= 100; i *= 3) {
+//                for (int j = 5; j <= 100; j *= 5) {
+//                    System.out.println("Fizz" + "Buzz");
+//                }
+//            }
+        // Course Instruction did not make it clear how this exercise ought result. I first wrote nested for loops (above) based on course instruction.
+
+        for (int num = 1; num <= 100; num++) {
+            if (num % 15 == 0) {
+                System.out.println("FizzBuzz");
+            } else if (num % 5 == 0) {
+                System.out.println("Buzz");
+            } else if (num % 3 == 0) {
+                System.out.println("Fizz");
+            } else {
+                System.out.println(num);
             }
         }
-
     }
 }
 
