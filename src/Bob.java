@@ -2,26 +2,30 @@ import java.util.Scanner;
 
 public class Bob {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        String chatMore = "";
+        do {
+            Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Hey, what's up? ");
-        String userInput = scanner.nextLine();
+            System.out.print("Hey, what's up? ");
+            String userInput = scanner.nextLine();
 
-        String bobQuestion = "Sure.";
-        String bobExclamation = "Whoa, chill out!";
-        String bobEmpty = "Fine. Be that way!";
-        String bobElse = "Whatever.";
+            String bobQuestion = "Sure.\n";
+            String bobExclamation = "Whoa, chill out!\n";
+            String bobEmpty = "Fine. Be that way!\n";
+            String bobElse = "Whatever.\n";
 
-        if (userInput.endsWith("?")) {
-            System.out.print(bobQuestion);
-        } else if (userInput.endsWith("!")) {
-            System.out.print(bobExclamation);
-        } else if (userInput.isEmpty()) {
-            System.out.print(bobEmpty);
-        } else {
-            System.out.print(bobElse);
-        }
-
+            if (userInput.endsWith("?")) {
+                System.out.print(bobQuestion);
+            } else if (userInput.endsWith("!")) {
+                System.out.print(bobExclamation);
+            } else if (userInput.isEmpty()) {
+                System.out.print(bobEmpty);
+            } else {
+                System.out.print(bobElse);
+            }
+            System.out.println("Wanna chat with Bob more?");
+            chatMore = scanner.next();
+        } while (chatMore.equalsIgnoreCase("y") || chatMore.equalsIgnoreCase("yes"));
     }
 }
 /*
