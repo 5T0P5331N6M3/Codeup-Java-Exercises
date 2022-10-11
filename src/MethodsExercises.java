@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class MethodsExercises {
     // Addition
     public static int addition(int num1, int num2) {
@@ -19,11 +21,30 @@ public class MethodsExercises {
         return num1 % num2;
     }
     public static void main(String[] args) {
-        System.out.println(addition(2, 3));
-        System.out.println(subtraction(4, 7));
-        System.out.println(multiplication(5, 9));
-        System.out.println(division(6, 9));
-        System.out.println(modulus(9, 4));
+//        System.out.println(addition(2, 3));
+//        System.out.println(subtraction(4, 7));
+//        System.out.println(multiplication(5, 9));
+//        System.out.println(division(6, 9));
+//        System.out.println(modulus(9, 4));
+        System.out.println(getInteger(1, 10));
+    }
+
+    public static int getInteger(int min, int max) {
+        Scanner scanner = new Scanner(System.in);
+        String noMas = "";
+        int userInput = 0;
+        do {
+            System.out.print("Enter a number between 1 and 10: ");
+            userInput = scanner.nextInt();
+            if (userInput < min || userInput > max) {
+                System.out.println("You did not guess within the range.");
+            } else {
+                System.out.println("You guessed within the range.");
+            }
+            System.out.println("Try again?");
+            noMas = scanner.next();
+        } while(noMas.equalsIgnoreCase("y") || noMas.equalsIgnoreCase("yes"));
+        return userInput;
     }
 
 }
