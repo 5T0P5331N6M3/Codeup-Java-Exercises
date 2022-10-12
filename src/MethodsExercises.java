@@ -1,18 +1,17 @@
-import java.util.Random;
 import java.util.Scanner;
 
 public class MethodsExercises {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         String rollAgain = "";
         Scanner scanner = new Scanner(System.in);
-//        System.out.println(addition(2, 3));
-//        System.out.println(subtraction(4, 7));
-//        System.out.println(multiplication(5, 9));
-//        System.out.println(division(6, 9));
-//        System.out.println(modulus(9, 4));
-//        System.out.println(getInteger(1, 10));
-//        factorial();
+        System.out.println(addition(2, 3));
+        System.out.println(subtraction(4, 7));
+        System.out.println(multiplication(5, 9));
+        System.out.println(division(6, 9));
+        System.out.println(modulus(9, 4));
+        System.out.println(getInteger(1, 10));
+        factorial();
+        gameDev();
         /* Dice Rolling Simulation */
         do {
             System.out.println("Enter the number of sides for a pair of dice: ");
@@ -21,52 +20,46 @@ public class MethodsExercises {
             System.out.println("Would you like to roll again? y or n");
             rollAgain = scanner.next();
         } while (rollAgain.equalsIgnoreCase("y") || rollAgain.equalsIgnoreCase("yes"));
-
+    }
+    /*getInteger*/
+    public static int getInteger(int min, int max) {
+        Scanner scanner = new Scanner(System.in);
+        String noMas = "";
+        int userInput = 0;
+        do {
+            System.out.print("Enter a number between 1 and 10: ");
+            userInput = scanner.nextInt();
+            if (userInput < min || userInput > max) {
+                System.out.println("You did not guess within the range.");
+            } else {
+                System.out.println("You guessed within the range.");
+                break;
+            }
+            System.out.println("Try again?");
+            noMas = scanner.next();
+        } while(noMas.equalsIgnoreCase("y") || noMas.equalsIgnoreCase("yes"));
+        return userInput;
     }
 
-
-
-
-    /*getInteger*/
-//    public static int getInteger(int min, int max) {
-//        Scanner scanner = new Scanner(System.in);
-//        String noMas = "";
-//        int userInput = 0;
-//        do {
-//            System.out.print("Enter a number between 1 and 10: ");
-//            userInput = scanner.nextInt();
-//            if (userInput < min || userInput > max) {
-//                System.out.println("You did not guess within the range.");
-//            } else {
-//                System.out.println("You guessed within the range.");
-//                break;
-//            }
-//            System.out.println("Try again?");
-//            noMas = scanner.next();
-//        } while(noMas.equalsIgnoreCase("y") || noMas.equalsIgnoreCase("yes"));
-//        return userInput;
-//    }
-
     /* factorial */
-//    public static void factorial()
-//    {
-//        String continueOn = "";
-//        int userInput = 0;
-//        Scanner scanner = new Scanner(System.in);
-//        System.out.println("Enter a number from 1 to 10.");
-//        userInput = scanner.nextInt();
-//        System.out.println("Continue? (y/n)");
-//        continueOn = scanner.next();
-//        long nums = 1;
-//        for (int i = userInput; i <= userInput; i++) {
-//            System.out.printf("%d! = 1", i);
-//            for (int j = 2; j <= userInput; j++) {
-//                System.out.printf(" x %d", j);
-//                nums *= j;
-//            }
-//            System.out.printf("   = %d", nums);
-//        }
-//    }
+    public static void factorial() {
+        String continueOn = "";
+        int userInput = 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a number from 1 to 10.");
+        userInput = scanner.nextInt();
+        System.out.println("Continue? (y/n)");
+        continueOn = scanner.next();
+        long nums = 1;
+        for (int i = userInput; i <= userInput; i++) {
+            System.out.printf("%d! = 1", i);
+            for (int j = 2; j <= userInput; j++) {
+                System.out.printf(" x %d", j);
+                nums *= j;
+            }
+            System.out.printf("   = %d%n", nums);
+        }
+    }
     /* Arithmetic */
     public static int addition(int num1, int num2) {
         return num1 + num2;
@@ -91,10 +84,27 @@ public class MethodsExercises {
     public static void randomDiceRoll(long sides) {
         int die1 = ((int)Math.floor(Math.random() * sides) + 1);
         int die2 = ((int)Math.floor(Math.random() * sides) + 1);
-
         System.out.printf("First die is %d.%n", die1);
         System.out.printf("Second die is %d.%n", die2);
-
+    }
+    /* Game Development 101 */
+    public static void gameDev() {
+        Scanner guessingGame = new Scanner(System.in);
+        System.out.println("Guess a number between 1 and 100.");
+        int userInput = guessingGame.nextInt();
+        int randomNum = (int)Math.floor(Math.random() * 100 + 1);
+        String forLow = "too high";
+        String forHigh = "too low";
+        if (userInput > randomNum) {
+            System.out.println("LOWER");
+            System.out.printf("You entered %d, which is %s.%n", userInput, forLow);
+        } else if (userInput < randomNum) {
+            System.out.println("HIGHER");
+            System.out.printf("You entered %d, which is %s.%n", userInput, forHigh);
+        } else {
+            System.out.println("GOOD GUESS!");
+            System.out.printf("You entered %d.%n", userInput);
+        }
     }
 }
 
