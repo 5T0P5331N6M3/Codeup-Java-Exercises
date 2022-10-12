@@ -1,19 +1,33 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class MethodsExercises {
-    // Addition
-
     public static void main(String[] args)
     {
+        String rollAgain = "";
+        Scanner scanner = new Scanner(System.in);
 //        System.out.println(addition(2, 3));
 //        System.out.println(subtraction(4, 7));
 //        System.out.println(multiplication(5, 9));
 //        System.out.println(division(6, 9));
 //        System.out.println(modulus(9, 4));
 //        System.out.println(getInteger(1, 10));
-        factorial();
+//        factorial();
+        /* Dice Rolling Simulation */
+        do {
+            System.out.println("Enter the number of sides for a pair of dice: ");
+            int sides = scanner.nextInt();
+            randomDiceRoll(sides);
+            System.out.println("Would you like to roll again? y or n");
+            rollAgain = scanner.next();
+        } while (rollAgain.equalsIgnoreCase("y") || rollAgain.equalsIgnoreCase("yes"));
+
     }
 
+
+
+
+    /*getInteger*/
 //    public static int getInteger(int min, int max) {
 //        Scanner scanner = new Scanner(System.in);
 //        String noMas = "";
@@ -33,26 +47,27 @@ public class MethodsExercises {
 //        return userInput;
 //    }
 
-    public static void factorial()
-    {
-        String continueOn = "";
-        int userInput = 0;
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter a number from 1 to 10.");
-        userInput = scanner.nextInt();
-        System.out.println("Continue? (y/n)");
-        continueOn = scanner.next();
-        long nums = 1;
-        for (int i = userInput; i <= userInput; i++) {
-            System.out.printf("%d! = 1", i);
-            for (int j = 2; j <= userInput; j++) {
-                System.out.printf(" x %d", j);
-                nums *= j;
-            }
-            System.out.printf("   = %d", nums);
-        }
-    }
-
+    /* factorial */
+//    public static void factorial()
+//    {
+//        String continueOn = "";
+//        int userInput = 0;
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Enter a number from 1 to 10.");
+//        userInput = scanner.nextInt();
+//        System.out.println("Continue? (y/n)");
+//        continueOn = scanner.next();
+//        long nums = 1;
+//        for (int i = userInput; i <= userInput; i++) {
+//            System.out.printf("%d! = 1", i);
+//            for (int j = 2; j <= userInput; j++) {
+//                System.out.printf(" x %d", j);
+//                nums *= j;
+//            }
+//            System.out.printf("   = %d", nums);
+//        }
+//    }
+    /* Arithmetic */
     public static int addition(int num1, int num2) {
         return num1 + num2;
     }
@@ -68,11 +83,22 @@ public class MethodsExercises {
     public static int division(int num1, int num2) {
         return num1 / num2;
     }
+    // Modulus
     public static int modulus(int num1, int num2) {
         return num1 % num2;
     }
+    // Dice Rolling Simulation
+    public static void randomDiceRoll(long sides) {
+        int die1 = ((int)Math.floor(Math.random() * sides) + 1);
+        int die2 = ((int)Math.floor(Math.random() * sides) + 1);
+
+        System.out.printf("First die is %d.%n", die1);
+        System.out.printf("Second die is %d.%n", die2);
+
+    }
 }
 
+/* Exercise Instructions */
 /*
 Exercises
 Create a class named MethodsExercises.
