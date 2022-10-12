@@ -9,8 +9,9 @@ public class Input {
         this.scanner = new Scanner(System.in);
     }
     public String getString() {
-        System.out.println();
-        return null;
+        System.out.println("Enter a word: ");
+        String getString = scanner.next();
+        return getString;
     }
     public boolean yesNo(String prompt1) {
         String ghost = "";
@@ -30,8 +31,10 @@ public class Input {
         return getInt;
     }
     public int getInt() {
-        System.out.println();
-        return 0;
+        System.out.println("Enter a number: ");
+        int getInt;
+        getInt = scanner.nextInt();
+        return getInt;
     }
     public double getDouble(double min, double max) {
         double getDouble = 0;
@@ -45,13 +48,15 @@ public class Input {
         return getDouble;
     }
     public double getDouble() {
-        System.out.println();
-        return 0;
+        System.out.println("Choose a decimal number.");
+        double getDouble;
+        getDouble = scanner.nextDouble();
+        return getDouble;
     }
-    public String showScanner() {
-        return "";
-//        return scanner;
-    }
+//    public String showScanner() {
+//        return "";
+////        return scanner;
+//    }
 
     public static void main(String[] args)
     {
