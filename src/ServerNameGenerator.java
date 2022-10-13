@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class ServerNameGenerator
 {
     public static void main(String[] args)
@@ -13,6 +15,7 @@ public class ServerNameGenerator
         adjectives[7] = "meaningless";
         adjectives[8] = "nicer";
         adjectives[9] = "uglier";
+
      String[] noun = new String[10];
         noun[0] = "Jim";
         noun[1] = "Bob";
@@ -24,5 +27,15 @@ public class ServerNameGenerator
         noun[7] = "Cho";
         noun[8] = "Amida";
         noun[9] = "Julian";
+        System.out.println("Here is your server name: \n" + randomElement(adjectives, noun));
+    }
+    public static String randomElement(String[] adjectives, String[] noun)
+    {
+        int randomNumA = 0;
+        int randomNumB = 0;
+        Random random = new Random();
+        randomNumA = random.nextInt(9);
+        randomNumB = random.nextInt(9);
+        return adjectives[randomNumA] + "-" + noun[randomNumB];
     }
 }
