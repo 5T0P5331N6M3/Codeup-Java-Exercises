@@ -6,11 +6,13 @@ public class Input {
     private final Scanner scanner;
 
     public Input() {
+
         this.scanner = new Scanner(System.in);
     }
     public String getString() {
         System.out.println("Enter a word: ");
-        String getString = scanner.next();
+        String getString;
+        getString = scanner.next();
         return getString;
     }
     public boolean yesNo(String prompt1) {
@@ -33,6 +35,8 @@ public class Input {
     public int getInt() {
         System.out.println("Enter a number: ");
         int getInt;
+        // replace nextInt with getString method created in previous exercise using the following methods to convert the returned String into the desired datatype:
+        // Integer.valueOf(String s);
         getInt = scanner.nextInt();
         return getInt;
     }
@@ -50,6 +54,8 @@ public class Input {
     public double getDouble() {
         System.out.println("Choose a decimal number.");
         double getDouble;
+        // replace nextInt with getString method created in previous exercise using the following methods to convert the returned String into the desired datatype:
+        //Double.valueOf(String s);
         getDouble = scanner.nextDouble();
         return getDouble;
     }
@@ -59,18 +65,10 @@ public class Input {
         getRadius = scanner.nextDouble();
         return getRadius;
     }
-//    public String showScanner() {
-//        return "";
-////        return scanner;
-//    }
-
     public static void main(String[] args)
     {
         Input lost = new Input();
         System.out.println(lost.getInt(1, 10));
         System.out.println(lost.getDouble(1, 10));
     }
-//        Scanner scanner = new Scanner(System.in);
-//        System.out.println("What is the radius of the circle? ");
-//    }
 }
