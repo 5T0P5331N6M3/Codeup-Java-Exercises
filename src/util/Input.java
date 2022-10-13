@@ -53,6 +53,12 @@ public class Input {
         getDouble = scanner.nextDouble();
         return getDouble;
     }
+    public double getRadius() {
+        System.out.println("What is the radius of some circle?");
+        double getRadius;
+        getRadius = scanner.nextDouble();
+        return getRadius;
+    }
 //    public String showScanner() {
 //        return "";
 ////        return scanner;
