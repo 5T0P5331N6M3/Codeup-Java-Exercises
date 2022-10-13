@@ -1,21 +1,42 @@
 import java.util.Arrays;
 
-public class ArraysExercises {
-    public static void main(String[] args) {
+public class ArraysExercises
+{
+    public static void main(String[] args)
+    {
         int[] numbers = {1, 2, 3, 4, 5};
         System.out.println(Arrays.toString(numbers));
         Person[] family = new Person[3];
         family[0] = new Person("Ophelia");
         family[1] = new Person("Amy");
         family[2] = new Person("Hodor");
-        for (Person person : family) {
+        for (Person person : family)
+        {
             System.out.println(person.getName());
         }
 
+        Person newPerson = new Person("Julian");
+
+        System.out.println(addPerson(family, newPerson).length);
+
+        for (String schmuck : addPerson(family, newPerson))
+        {
+            System.out.println(schmuck);
+        }
+    }
+    public static String[] addPerson(Person[] person, Person p)
+    {
+        String[] addPerson = new String[person.length + 1];
+        for (int i = 0; i < person.length; i +=1)
+        {
+            addPerson[i] = person[i].getName();
+        }
+        addPerson[addPerson.length - 1] = p.getName();
+        return addPerson;
     }
 }
 
 
-/*Create an array that holds 3 Person objects. Assign a new instance of the Person class to each element. Iterate through the array and print out the name of each person in the array.
-
-Create a static method named addPerson. It should accept an array of Person objects, as well as a single person object to add to the passed array. It should return an array whose length is 1 greater than the passed array, with the passed person object at the end of the array.*/
+/*
+Create a static method named addPerson. It should accept an array of Person objects, as well as a single person object to add to the passed array. It should return an array whose length is 1 greater than the passed array, with the passed person object at the end of the array.
+*/

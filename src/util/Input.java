@@ -37,6 +37,7 @@ public class Input {
         int getInt;
         // replace nextInt with getString method created in previous exercise using the following methods to convert the returned String into the desired datatype:
         // Integer.valueOf(String s);
+        // Print Prompt
         getInt = scanner.nextInt();
         return getInt;
     }
