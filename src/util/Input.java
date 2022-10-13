@@ -9,10 +9,22 @@ public class Input {
 
         this.scanner = new Scanner(System.in);
     }
-    public String getString() {
-        System.out.println("Enter a word: ");
+    public String getMovieInput()
+    {
         String getString;
-        getString = scanner.next();
+        System.out.println("Select from the list of movies, or exit?");
+        System.out.println("All");
+        System.out.println("Category");
+        System.out.println("Title");
+        System.out.println("Exit");
+        getString = scanner.nextLine();
+        return getString;
+    }
+    public String getString(String input) {
+//        System.out.println("Enter a word: ");
+        String getString;
+        System.out.println(input);
+        getString = scanner.nextLine();
         return getString;
     }
     public boolean yesNo(String prompt1) {
