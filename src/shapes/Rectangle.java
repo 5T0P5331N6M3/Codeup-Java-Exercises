@@ -28,8 +28,8 @@ public class Rectangle {
 
     public double getPerimeter()
     {
-
-        return 0;
+        //  Perimeter = 2 x length + 2 x width;
+        return 2 * length + 2 * width;
     }
 }
 //  TODO: Have protected properties for both length and width.
