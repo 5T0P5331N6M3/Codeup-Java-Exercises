@@ -3,8 +3,10 @@ package shapes;
 import java.util.Scanner;
 
 public class Rectangle {
+    protected double length;
+    protected double width;
 
-    public Rectangle() {
+    public Rectangle(double length, double width) {
 
     }
 
@@ -18,15 +20,13 @@ public class Rectangle {
 
     }
 
-    public static double getArea()
+    public double getArea()
     {
         //  Area = length x width;
-        double area;
-        area = length*width;
-        return 0;
+        return length * width;
     }
 
-    public static double getPerimeter()
+    public double getPerimeter()
     {
 
         return 0;
