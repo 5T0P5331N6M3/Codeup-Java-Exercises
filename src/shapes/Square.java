@@ -2,7 +2,7 @@ package shapes;
 
 public class Square extends Rectangle {
     public Square(double perimeter, double area, double side) {
-        super();
+        super(side, side);
     }
 
     public double getPerimeter()
@@ -10,7 +10,7 @@ public class Square extends Rectangle {
         //  Perimeter = 4 x side;
         //  side = Rectangle's width;
         //  if side, then why P and A in constructor parm? Why not side
-        return 4 * width;
+        return 4 * length;
     }
 
     public double getArea()
