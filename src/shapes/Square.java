@@ -4,6 +4,20 @@ public class Square extends Rectangle {
     public Square(double perimeter, double area, double side) {
         super();
     }
+
+    public double getPerimeter()
+    {
+        //  Perimeter = 4 x side;
+        //  side = Rectangle's width;
+        //  if side, then why P and A in constructor parm? Why not side
+        return 4 * width;
+    }
+
+    public double getArea()
+    {
+        //  Area = side ^ 2;
+        return Math.pow(width, 2);
+    }
 }
 
         /* Inheritance and Polymorphism Exercise */
