@@ -1,27 +1,11 @@
 package shapes;
 
-public class Square extends Rectangle {
-    public Square(double perimeter, double area, double side) {
-        super(side, side);
-    }
+public class ShapesTest
+{
 
-    public double getPerimeter()
-    {
-        //  Perimeter = 4 x side;
-        //  side = Rectangle's width;
-        //  if side, then why P and A in constructor parm? Why not side
-        return 4 * length;
-    }
-
-    public double getArea()
-    {
-        //  Area = side ^ 2;
-        return Math.pow(width, 2);
-    }
 }
 
-        /* Inheritance and Polymorphism Exercise Shapes.Rectangle, Shapes.Square, Shapes.ShapesTest */
-//  TODO: Create a class named Square, also inside of shapes, extending Rectangle. Square should define a constructor accepting one argument, side, and calls the parent's constructor to set both the length and width to the value of side.
+    /* Inheritance and Polymorphism Exercise Shapes.Rectangle, Shapes.Square, Shapes.ShapesTest */
 //  TODO: Test your code by creating a new class, ShapesTest (also inside of shapes) with a main method. Inside the main method:
 //  TODO: Create a variable of the type Rectangle named box1 and assign it a new instance of the Rectangle class with a width of 4 and a length of 5.
 //  TODO: Verify that the getPerimeter and getArea methods return 18 and 20, respectively.

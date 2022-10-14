@@ -25,7 +25,7 @@ public class Rectangle
         return 2 * length + 2 * width;
     }
 }
-    /* Inheritance and Polymorphism Exercise */
+    /* Inheritance and Polymorphism Exercise Shapes.Rectangle, Shapes.Square, Shapes.ShapesTest */
 //  TODO: Have protected properties for both length and width.
 //  TODO: Define constructor accepting two numbers for length and width, and sets those properties.
 //  TODO: Create two methods on the Rectangle class, getArea and getPerimeter that return the respective values. The formulas for both follow:
