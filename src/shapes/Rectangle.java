@@ -13,10 +13,6 @@ public class Rectangle
         this.width = width;
     }
 
-    public Rectangle() {
-
-    }
-
     public double getArea()
     {
         //  Area = length x width;

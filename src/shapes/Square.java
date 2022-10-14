@@ -6,7 +6,7 @@ public class Square extends Rectangle {
     }
 }
 
-/* Inheritance and Polymorphism Exercise */
+        /* Inheritance and Polymorphism Exercise */
 //  TODO: Create a class named Square, also inside of shapes, extending Rectangle. Square should define a constructor accepting one argument, side, and calls the parent's constructor to set both the length and width to the value of side.
 //  TODO: Test your code by creating a new class, ShapesTest (also inside of shapes) with a main method. Inside the main method:
 //  TODO: Create a variable of the type Rectangle named box1 and assign it a new instance of the Rectangle class with a width of 4 and a length of 5.
