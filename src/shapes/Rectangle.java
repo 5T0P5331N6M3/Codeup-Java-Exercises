@@ -2,22 +2,18 @@ package shapes;
 
 import java.util.Scanner;
 
-public class Rectangle {
+public class Rectangle
+{
     protected double length;
     protected double width;
 
-    public Rectangle(double length, double width) {
+    public Rectangle(double length, double width)
+    {
         this.length = length;
         this.width = width;
     }
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Enter length of Rectangle:");
-        double length = scanner.nextDouble();
-        System.out.println("Enter width of Rectangle:");
-        double width = scanner.nextDouble();
+    public Rectangle() {
 
     }
 
