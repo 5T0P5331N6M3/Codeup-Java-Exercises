@@ -4,7 +4,7 @@ public class ShapesTest
 {
     public static void main(String[] args) {
         Rectangle box1;
-        box1 = new Rectangle(width: 4, length: 5);
+        box1 = new Rectangle(4, 5);
     }
 }
 
