@@ -2,7 +2,10 @@ package shapes;
 
 public class ShapesTest
 {
-
+    public static void main(String[] args) {
+        Rectangle box1;
+        box1 = new Rectangle(width: 4, length: 5);
+    }
 }
 
     /* Inheritance and Polymorphism Exercise Shapes.Rectangle, Shapes.Square, Shapes.ShapesTest */
