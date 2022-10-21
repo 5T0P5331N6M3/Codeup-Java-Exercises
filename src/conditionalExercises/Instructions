@@ -1,0 +1,11 @@
+Conditionals Practice Problems
+Write if statements to do the following:
+– If character variable taxCode is ‘T’, increase price by adding the taxRate percentage of price to it.
+– If integer variable opCode has the value 1, read in double values for X and Y and calculate and print their sum. 5
+– If integer variable currentNumber is odd, change its value so that it is now 3 times currentNumber plus 1, otherwise change its value so that it is now half of currentNumber (rounded down when currentNumber is odd).
+ – Assign true to the boolean variable leapYear if the integer variable year is a leap year. (A leap year is a multiple of 4, and if it is a multiple of 100, it must also be a multiple of 400.) – Assign a value to double variable cost depending on the value of integer variable distance as follows:
+Distance 	Cost
+0-100	        5.00
+100-500	        8.00
+500-1000	10.00
+1000+	        12.00
