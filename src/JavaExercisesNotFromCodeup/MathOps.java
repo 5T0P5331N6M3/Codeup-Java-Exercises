@@ -59,5 +59,13 @@ public class MathOps
         System.out.println(testNum1 * testNum2);
         System.out.println(testNum1 / testNum2);
         System.out.println(testNum1 % testNum2);
+
+        //  Write a Java program that takes a number as input and prints its multiplication table upto 10.
+        System.out.println("Entert a number: ");
+        num1 = numInput.nextInt();
+        for (int i = 0; i < 10; i++)
+        {
+            System.out.println(num1 + " x " + (i + 1) + " = " + (num1 * (i + 1)));
+        }
     }
 }
