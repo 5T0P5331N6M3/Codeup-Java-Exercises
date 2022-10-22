@@ -75,7 +75,12 @@ public class BasicJava1
         System.out.println("J  J  aaaaa   V   V  aaaaa");
         System.out.println(" JJ  a     a    V   a     a");
         //   Write a Java program to compute the specified expressions and print the output.
-        double testData = (25.5 * -3.5 * 3.5) / (40.5 - 4.5);
+        double testData = ((25.5 * -3.5 * 3.5 * 3.53) / (40.5 - 4.5));
         System.out.println(testData);
+
+        //  Write a Java program to compute a specified formula.
+        //  Specified Formula :
+        double specifiedFormula = 4.0 * (1 - (1.0/3) + (1.0/5) - (1.0/7) + (1.0/9) - (1.0/11));
+        System.out.println(specifiedFormula);
     }
 }
