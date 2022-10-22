@@ -9,6 +9,7 @@ public class MathOps
         Scanner numInput = new Scanner(System.in);
         int num1 = 0;
         int num2 = 0;
+
         //  Write a Java program to print the sum of two numbers.
         //  I added user input for numbers for better understanding.
         System.out.println("Type first number to add: ");
@@ -49,5 +50,14 @@ public class MathOps
         num2 = numInput.nextInt();
         int product = num1 * num2;
         System.out.println("The product of your two numbers is " + product + ".");
+
+        //  Write a Java program to print the sum (addition), multiply, subtract, divide and remainder of two numbers.
+        int testNum1 = 125;
+        int testNum2 = 24;
+        System.out.println(testNum1 + testNum2);
+        System.out.println(testNum1 - testNum2);
+        System.out.println(testNum1 * testNum2);
+        System.out.println(testNum1 / testNum2);
+        System.out.println(testNum1 % testNum2);
     }
 }
