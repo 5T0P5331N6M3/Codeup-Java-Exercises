@@ -16,7 +16,7 @@ public class MathOps
         System.out.println("Type second number to add: ");
         num2 = numInput.nextInt();
         int sum = num1 + num2;
-        System.out.println("The sum of your two numbers is " + sum);
+        System.out.println("The sum of your two numbers is " + sum + ".");
 
         //  Write a Java program to divide two numbers and print on the screen.
         System.out.println("Type first number to divide: ");
@@ -24,7 +24,7 @@ public class MathOps
         System.out.println("Type second number to divide by: ");
         num2 = numInput.nextInt();
         int quotient = num1 / num2;
-        System.out.println("The quotient of your input is " + quotient);
+        System.out.println("The quotient of your input is " + quotient + ".");
 
         /* Write a Java program to print the result of the following operations:*/
         int a = -5 + 8 * 6;
@@ -42,5 +42,12 @@ public class MathOps
         System.out.println(c);
         System.out.println(d);
 
+        //  Write a Java program that takes two numbers as input and display the product of two numbers.
+        System.out.println("Type a number to multiply with: ");
+        num1 = numInput.nextInt();
+        System.out.println("Type another number to multiply with: ");
+        num2 = numInput.nextInt();
+        int product = num1 * num2;
+        System.out.println("The product of your two numbers is " + product + ".");
     }
 }
