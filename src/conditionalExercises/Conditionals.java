@@ -44,6 +44,6 @@ public class Conditionals
         //100-500	        8.00
         //500-1000	10.00
         //1000+	        12.00
-        if (leapYear )
+//        if (leapYear )
     }
 }
