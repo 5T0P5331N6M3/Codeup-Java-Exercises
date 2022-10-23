@@ -1,8 +1,8 @@
 package shapes;
 
-public class Square extends Rectangle
+public class SquareReference extends Rectangle
 {
-    public Square(double side)
+    public SquareReference(double side)
     {
         super(side, side);
     }
