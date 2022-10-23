@@ -9,8 +9,11 @@ public class BasicJava1
     public static void main(String[] args)
     {
         Scanner numInput = new Scanner(System.in);
+
+        //  Variables
         int num1 = 0;
         int num2 = 0;
+        int num3 = 0;
 
         //  Write a Java program to print the sum of two numbers.
         //  I added user input for numbers for better understanding.
@@ -93,5 +96,16 @@ public class BasicJava1
         double circleCircumference = 2 * PI * radius;
         System.out.println(circleArea);
         System.out.println(circleCircumference);
+
+        //  Write a Java program that takes three numbers as input to calculate and print the average of the numbers.
+        System.out.println("Get an average number from three numbers.\nEnter First Number: ");
+         num1 = numInput.nextInt();
+         System.out.println("Enter Second Number: ");
+         num2 = numInput.nextInt();
+         System.out.println("Enter Third Number: ");
+         num3 = numInput.nextInt();
+         int avgerageNum = (num1 + num2 + num3) / 3;
+        System.out.println("The Average Number for your input is: " + avgerageNum + ".");
+
     }
 }
