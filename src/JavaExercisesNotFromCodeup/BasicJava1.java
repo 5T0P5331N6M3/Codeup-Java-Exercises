@@ -2,6 +2,8 @@ package JavaExercisesNotFromCodeup;
 
 import java.util.Scanner;
 
+import static java.lang.Math.PI;
+
 public class BasicJava1
 {
     public static void main(String[] args)
@@ -82,5 +84,14 @@ public class BasicJava1
         //  Specified Formula :
         double specifiedFormula = 4.0 * (1 - (1.0/3) + (1.0/5) - (1.0/7) + (1.0/9) - (1.0/11));
         System.out.println(specifiedFormula);
+
+        //  Write a Java program to print the area and perimeter of a circle.
+        //  Area = Pi*r^2
+        //  Circumference = 2 * Pi* r
+        double radius = 7.5;
+        double circleArea = PI * radius * radius;
+        double circleCircumference = 2 * PI * radius;
+        System.out.println(circleArea);
+        System.out.println(circleCircumference);
     }
 }
