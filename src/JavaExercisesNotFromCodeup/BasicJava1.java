@@ -107,5 +107,14 @@ public class BasicJava1
          int avgerageNum = (num1 + num2 + num3) / 3;
         System.out.println("The Average Number for your input is: " + avgerageNum + ".");
 
+        //  Write a Java program to print the area and perimeter of a rectangle.
+        System.out.println("Enter length of rectangle: ");
+        int length = numInput.nextInt();
+        System.out.println("Enter width of rectangle: ");
+        int width = numInput.nextInt();
+        int areaOfRectangle = length * width;
+        System.out.println("Area of rectangle is " + areaOfRectangle +".");
+        int perimeterOfRectangle = 2 * (length + width);
+        System.out.println("Perimeter of rectangle is " + perimeterOfRectangle + ".");
     }
 }
