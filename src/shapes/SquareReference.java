@@ -2,23 +2,23 @@ package shapes;
 
 public class SquareReference extends Rectangle
 {
-    public SquareReference(double side)
-    {
-        super(side, side);
-    }
-
-    public double getPerimeter()
-    {
-        //  Perimeter = 4 x side;
-        //  side = Rectangle's width;
-        return 4 * length;
-    }
-
-    public double getArea()
-    {
-        //  Area = side ^ 2;
-        return Math.pow(width, 2);
-    }
+//    public SquareReference(double side)
+//    {
+//        super(side, side);
+//    }
+//
+//    public double getPerimeter()
+//    {
+//        //  Perimeter = 4 x side;
+//        //  side = Rectangle's width;
+//        return 4 * length;
+//    }
+//
+//    public double getArea()
+//    {
+//        //  Area = side ^ 2;
+//        return Math.pow(width, 2);
+//    }
 }
 
         /* Inheritance and Polymorphism Exercise Shapes.Rectangle, Shapes.Square, Shapes.ShapesTest */
