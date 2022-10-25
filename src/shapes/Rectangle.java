@@ -8,13 +8,14 @@ public class Rectangle extends Quadrilateral implements Measurable
     }
 
     @Override
-    public double getPerimeter() {
-        return 0;
+    public double getPerimeter()
+    {
+        return 2 * (width + length);
     }
 
     @Override
     public double getArea() {
-        return 0;
+        return width * length;
     }
 
     @Override

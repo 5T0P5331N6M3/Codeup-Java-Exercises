@@ -4,7 +4,16 @@ import org.w3c.dom.ls.LSOutput;
 
 public class ShapesTest
 {
-    public static void main(String[] args) {
+
+
+    public static void main(String[] args)
+    {
+        Measurable myShape = new Square(3, 3);
+//        myShape = new Rectangle(4,6);
+
+        System.out.println(myShape.getArea());
+        System.out.println(myShape.getPerimeter());
+
         Rectangle box1;
 //        box1 = new Rectangle(5, 4);
 //        System.out.println(box1.getArea());
