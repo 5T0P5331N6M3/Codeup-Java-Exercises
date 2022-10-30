@@ -1,3 +1,5 @@
+package JavaExercisesNotFromCodeup;
+
 import java.text.NumberFormat;
 import java.util.Scanner;
 
@@ -16,7 +18,7 @@ public class MortgageCalculator
 
 
         //  Principal
-        System.out.print("Principal: ");
+        System.out.print("Principal ($1K - $1M): ");
         principal = scanner.nextInt();
         //  APR
         System.out.print("Annual Interest Rate: ");
