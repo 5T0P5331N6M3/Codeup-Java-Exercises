@@ -18,13 +18,9 @@ public class Square extends Quadrilateral
     }
 
     @Override
-    void setLength(int length) {
-
-    }
+    void setLength(int length) {}
 
     @Override
-    void setWidth(int width) {
-
-    }
+    void setWidth(int width) {}
 }
 

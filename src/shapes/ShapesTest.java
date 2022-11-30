@@ -8,7 +8,7 @@ public class ShapesTest
 
     public static void main(String[] args)
     {
-        Measurable myShape = new Square(3, 3);
+        Measurable myShape = new Square(6, 3);
 //        myShape = new Rectangle(4,6);
 
         System.out.println(myShape.getArea());
